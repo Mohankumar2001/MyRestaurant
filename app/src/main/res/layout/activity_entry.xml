@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#143F6B"
+    tools:context=".entry">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyRestaurant"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:textColor="#E8630A"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entry"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/title2"
+        android:textColor="#E8630A"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginTop="55dp"
+        android:hint="Order no"
+        android:textColorHint="#E8630A"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:id="@+id/orderno"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderno"
+        android:layout_margin="10dp"
+        android:hint="Table no"
+        android:textColorHint="#E8630A"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/tableno"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableno"
+        android:layout_margin="10dp"
+        android:hint="dish1"
+        android:textColorHint="#E8630A"
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/dish1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish1"
+        android:layout_margin="10dp"
+        android:hint="dish2"
+        android:textColorHint="#E8630A"
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/dish2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish2"
+        android:layout_margin="10dp"
+        android:hint="dish3"
+        android:textColorHint="#E8630A"
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/dish3"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish3"
+        android:layout_margin="10dp"
+        android:hint="dish4"
+        android:textColorHint="#E8630A"
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/dish4"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Enter"
+        android:id="@+id/enter"
+        android:layout_below="@id/dish4"
+        android:textColor="#E8630A"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="View"
+        android:id="@+id/view"
+        android:layout_below="@id/enter"
+        android:textColor="#E8630A"
+        />
+
+
+
+</RelativeLayout>

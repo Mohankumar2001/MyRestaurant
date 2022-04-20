@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#143F6B"
+    tools:context=".Tableview">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyRestaurant"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:textColor="#E8630A"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Table"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/title2"
+        android:textColor="#E8630A"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title2"
+        android:layout_above="@id/bck"
+       >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title2"
+        android:layout_above="@id/bck"
+        >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:id="@+id/mytable"
+        android:stretchColumns="*"
+        android:layout_margin="10dp"
+        >
+    </TableLayout>
+    </ScrollView>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:id="@+id/bck"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#E8630A"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Del"
+        android:id="@+id/del"
+        android:layout_alignParentBottom="true"
+        android:textColor="#E8630A"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in"
+        android:layout_toRightOf="@id/bck"
+        android:layout_toLeftOf="@id/del"
+        android:hint="Del oder"
+        android:textColor="#E8630A"
+        android:layout_alignParentBottom="true"
+        android:textColorHint="#E8630A"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+
+</RelativeLayout>
