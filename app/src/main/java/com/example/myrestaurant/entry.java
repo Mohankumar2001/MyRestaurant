@@ -11,9 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -46,7 +43,7 @@ public class entry extends AppCompatActivity {
         loadData();
         int order_no = mydatalist.size() + 1;
         orderno.setText(Integer.toString(order_no));
-        orderno.setTextColor(Color.parseColor("#E8630A"));
+        orderno.setTextColor(Color.parseColor("#C689EC"));
 
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +61,8 @@ public class entry extends AppCompatActivity {
                     Toast.makeText(entry.this,"Atleast 1 dish should be ordered",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    mydatalist.add(new mydata(no1,no2,d1,d2,d3,d4));
+                    mydata temp = new mydata(no1,no2,d1,d2,d3,d4);
+                    mydatalist.add(temp);
                     saveData();
                     Toast.makeText(entry.this,"data stored"+mydatalist.size(),Toast.LENGTH_SHORT).show();
                 }

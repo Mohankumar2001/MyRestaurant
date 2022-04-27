@@ -44,13 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        view.setOnClickListener(new View.OnClickListener() {
+        view.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View view) {
+            public boolean onLongClick(View view) {
                 Intent a = new Intent(MainActivity.this, com.example.myrestaurant.Tableview.class);
                 startActivity(a);
                 finish();
+                return false;
             }
         });
+
     }
 }

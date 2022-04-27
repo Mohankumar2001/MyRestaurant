@@ -68,12 +68,12 @@ public class Tableview extends AppCompatActivity {
         for (int i = -1; i < n; i++) {
 
             if(i== -1){
-                 order_no = "Order No";
-                 table_no = "Table No";
-                 d1 = "Dish 1";
-                 d2 = "Dish 2";
-                 d3 = "Dish 3";
-                 d4 = "Dish 4";
+                 order_no = "Order No. ";
+                 table_no = "Table No. ";
+                 d1 = "Item 1 ";
+                 d2 = "Item 2 ";
+                 d3 = "Item 3 ";
+                 d4 = "Item 4 ";
             }
             else {
                 mydata temp = mydatalist.get(i);
@@ -99,32 +99,32 @@ public class Tableview extends AppCompatActivity {
 
                 column1.setText(order_no);
                 column1.setPadding(5, 5, 5, 5);
-                column1.setTextColor(Color.parseColor("#E8630A"));
+                column1.setTextColor(Color.parseColor("#67318E"));
                 column1.setTextSize(20);
 
                 column2.setText(table_no);
                 column2.setPadding(5, 5, 5, 5);
-                column2.setTextColor(Color.parseColor("#E8630A"));
+                column2.setTextColor(Color.parseColor("#67318E"));
                 column2.setTextSize(20);
 
                 column3.setText(d1);
                 column3.setPadding(5, 5, 5, 5);
-                column3.setTextColor(Color.parseColor("#E8630A"));
+                column3.setTextColor(Color.parseColor("#67318E"));
                 column3.setTextSize(20);
 
                 column4.setText(d2);
                 column4.setPadding(5, 5, 5, 5);
-                column4.setTextColor(Color.parseColor("#E8630A"));
+                column4.setTextColor(Color.parseColor("#67318E"));
                 column4.setTextSize(20);
 
                 column5.setText(d3);
                 column5.setPadding(5, 5, 5, 5);
-                column5.setTextColor(Color.parseColor("#E8630A"));
+                column5.setTextColor(Color.parseColor("#67318E"));
                 column5.setTextSize(20);
 
                 column6.setText(d4);
                 column6.setPadding(5, 5, 5, 5);
-                column6.setTextColor(Color.parseColor("#E8630A"));
+                column6.setTextColor(Color.parseColor("#67318E"));
                 column6.setTextSize(20);
 
                 newRow.addView(column1);
